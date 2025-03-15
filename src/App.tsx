@@ -37,7 +37,7 @@ function App() {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact" element={<ContactPage key="contact-page" />} />
           {import.meta.env.VITE_TEMPO === "true" && (
             <Route path="/tempobook/*" />
           )}
